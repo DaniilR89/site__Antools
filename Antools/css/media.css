@@ -1,0 +1,171 @@
+@media (max-width: 1020px){
+
+    .tools__img-bg{
+        display: none;
+    }
+
+    .tools__title{
+        text-align: center;
+    }
+
+    .tools__descr{
+        margin: 0 auto;
+    }
+
+    .tools__inputs{
+        margin: 50px auto;
+    }
+
+    .social{
+        margin: 0;
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 950px){
+
+    .menu-btn{
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        background-color: transparent;
+        order: 1; /*меняет расположение флекс элементов,
+        то есть бургер идет в конец*/
+        border: none;
+        cursor: pointer;
+        position: relative;
+
+        z-index: 2;
+    }
+
+    /* рисивание бургера */
+    .btn-line{
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        height: 2px;
+
+        transition: .3s ease-in-out;
+    }
+
+    .btn-line:nth-child(1){
+        top: 0;
+    }
+    .btn-line:nth-child(2){
+        top: 20px;
+    }
+    .btn-line:nth-child(3){
+        top: 20px;
+    }
+    .btn-line:nth-child(4){
+        top: 40px;
+    }
+
+    .menu-open .btn-line:nth-child(1){
+        transform: scaleX(0);
+    }
+
+    .menu-open .btn-line:nth-child(2){
+        transform: rotate(45deg);
+    }
+
+    .menu-open .btn-line:nth-child(3){
+        transform: rotate(-45deg);
+    }
+
+    .menu-open .btn-line:nth-child(4){
+        transform: scaleX(0);
+    }
+
+    .nav__items{
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+
+        background-color: #000;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        padding-top: 56px;
+
+        transform: translateY(-100%); /*убирает бургер меню*/
+        transition: .3s ease;
+    }
+
+    .menu-open .nav__items{
+        transform: translateY(0%);
+    }
+
+    .nav__item {
+        margin: 0;
+        margin: 10px 0;
+    }
+
+    .nav__link{
+        font-size: 40px;
+    }
+
+    .img__logo{
+        position: relative;
+        z-index: 2;
+    }
+
+    .tools__inputs{
+        display: none;
+    }
+
+    .header__login{
+        position: relative;
+        z-index: 2;
+    }
+
+}
+
+@media (max-width: 792px){
+
+    .section__descr{
+        margin-bottom: 50px;
+    }
+
+    .popular__items{
+        justify-content: center;
+        margin: 0;
+    }
+
+    .brand__item{
+        margin: 5px 0;
+    }
+
+}
+
+@media (max-width: 700px){
+
+    .newcomer__content{
+        flex-direction: column;
+    }
+
+    .newcomer__info{
+        margin: 0 auto 20px auto;
+    }
+
+}
+
+@media (max-width: 590px){
+
+    .ide__items{
+        justify-content: center;
+    }
+
+    .become{
+        padding: 0;
+        padding-bottom: 50px;
+    }
+
+}
